@@ -61,7 +61,7 @@ export default {
   const estrelas = { rating: this.rating };
   axios.post("http://localhost:8085/api/v1/avaliacao", estrelas)
     .then((response) => {
-      alert("voce enviou "+response.data+" estrelas.");
+      alert("Obrigado por responder! Você enviou "+response.data+" estrelas.");
     });
     },
     changerat(index){
